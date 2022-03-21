@@ -1,35 +1,61 @@
 import React from 'react'
-import NavBar from './NavBar'
-import Records from './sundaymenu.json';
+import menu from './menu.json';
+import './MenuTable.css';
+import NavBar from './NavBar';
 
 
 function Sunday() {
-    return (
-        <div> 
-        <NavBar />
-            Sunday Menu
-
-            <br/><br/>
-    {
-      Records.map(record => {
-        return(
-          <div className= "box" key={record.id}>
-            <strong>{record.name}</strong><br/>
-           
-            {record.Type.map(data =>{
-              return(
-                <div key ={record.id}>
-                {data.food}
-                </div>
-              );
-            })}
-            </div>
-        );
-      })
-    }
+  return (
+    <div>
     
- </div>
-    );
+      <NavBar />
+      Sunday menu
+      <br/><br/>
+
+      {
+       menu.map(record => {
+        return(
+          record.week.filter(week => week.weekday === "Sunday")
+          .map(week => {
+            return (
+              <div className= "box" key={week.weekday}>
+                <strong>{week.weekday}</strong><br/>
+
+                {
+                  week.mealtype.map(mealtype => {
+                    return(
+                      <div key ={mealtype.mealid}>
+                        {mealtype.name} - {mealtype.calorie}
+                        <table id="menuitems">
+                          <tr>
+                            <th>Item</th>
+                            <th>Add Item</th>
+                          </tr>
+                        {
+                          mealtype.menuitems.map(mealitem =>{
+                            return(
+                                <tr>
+                                  <td>{mealitem.food}</td>
+                                  <td><button id="addItem">+</button></td>
+                                </tr>
+                            )
+                          })
+                        }
+                        </table>
+                      </div>
+                    )
+                  })
+                }
+
+              </div>
+            )
+          })
+        )
+      })
+      
+    }
+    </div>
+  )
 }
 
-export default Sunday;
+export default Sunday

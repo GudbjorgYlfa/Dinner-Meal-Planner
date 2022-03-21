@@ -6,9 +6,10 @@ import './MenuTable.css';
 function Tuesday() {
  
   return (
-    <div>Tuesday, Reading menu
+        <div>
         <NavBar/>
-      <br/><br/>
+        Tuesday menu
+        <br/><br/>
     {/* {
        menu.map(record => {
         return(
@@ -27,7 +28,7 @@ function Tuesday() {
 {
        menu.map(record => {
         return(
-          record.week.filter(week => week.weekday === "Tuesday")
+          record.week.filter(week => week.weekday === "Thursday")
           .map(week => {
             return (
               <div className= "box" key={week.weekday}>

@@ -7,8 +7,9 @@ import NavBar from './NavBar';
 function Monday() {
  
   return (
-    <div>Monday, Reading menu
+    <div>
       <NavBar />
+      Monday, Reading menu
       <br/><br/>
     {/* {
        menu.map(record => {
