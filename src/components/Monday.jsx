@@ -1,11 +1,11 @@
 import React from 'react'
 import NavBar from './NavBar'
-import Records from './menu.json';
+import Records from './mondaymenu.json';
 
 function Monday() {
  
   return (
-    <div>Monday, Reading menu
+    <div>Monday Menu
          
       <br/><br/>
     {

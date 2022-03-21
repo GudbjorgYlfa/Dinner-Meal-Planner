@@ -5,9 +5,9 @@ function Wednesday() {
     return (
         <div>
             <NavBar />
-            Wednesday
+            Wednesday Menu
         </div>
-    )
+    );
 }
 
-export default Wednesday
+export default Wednesday;
