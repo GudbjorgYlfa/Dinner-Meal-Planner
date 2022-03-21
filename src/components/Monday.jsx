@@ -1,31 +1,72 @@
 import React from 'react'
-import NavBar from './NavBar'
-import Records from './mondaymenu.json';
+
+import menu from './menu.json';
+import './MenuTable.css';
+import NavBar from './NavBar';
 
 function Monday() {
  
   return (
-    <div>Monday Menu
-         
+    <div>Monday, Reading menu
+      <NavBar />
       <br/><br/>
-    {
-      Records.map(record => {
+    {/* {
+       menu.map(record => {
         return(
-          <div className= "box" key={record.id}>
-            <strong>{record.name}</strong><br/>
-           
-            {record.Type.map(data =>{
-              return(
-                <div key ={record.id}>
-                {data.food}
-                </div>
-              );
-            })}
+          record.week.map(week => { 
+            return(
+          <div className= "box" key={week.weekday}>
+            <strong>{week.weekday}</strong><br/>
             </div>
-        );
+            )
+          })
+        )
       })
+      
+    } */}
+
+{
+       menu.map(record => {
+        return(
+          record.week.filter(week => week.weekday === "Monday")
+          .map(week => {
+            return (
+              <div className= "box" key={week.weekday}>
+                <strong>{week.weekday}</strong><br/>
+
+                {
+                  week.mealtype.map(mealtype => {
+                    return(
+                      <div key ={mealtype.mealid}>
+                        {mealtype.name} - {mealtype.calorie}
+                        <table id="menuitems">
+                          <tr>
+                            <th>Item</th>
+                            <th>Add Item</th>
+                          </tr>
+                        {
+                          mealtype.menuitems.map(mealitem =>{
+                            return(
+                                <tr>
+                                  <td>{mealitem.food}</td>
+                                  <td><button id="addItem">+</button></td>
+                                </tr>
+                            )
+                          })
+                        }
+                        </table>
+                      </div>
+                    )
+                  })
+                }
+
+              </div>
+            )
+          })
+        )
+      })
+      
     }
-    <NavBar />
     </div>
   );
 }

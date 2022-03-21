@@ -1,0 +1,107 @@
+[
+    {
+      "week":[
+          {
+          "weekday":"Monday",
+          "mealtype":[
+            {
+              "mealid": 1,
+              "name": "BreakFast",
+              "calorie": "High",
+              "menuitems":[
+                  {
+                    "id": 1,
+                    "food": "Sandwitch"
+                  },
+                  {
+                    "id": 2,
+                    "food": "Fried eggs"
+                  }
+              ]
+            },
+            {
+              "mealid": 2,
+              "name": "Lunch",
+              "calorie": "High",
+              "menuitems":[
+                  {  
+                    "id": 1,
+                    "food": "Soup"
+                  },
+                  {
+                        "id": 2,
+                      "food": "Pasta"
+                  }
+              ]
+            },
+            {
+              "mealid": 3,
+              "name": "Dinner",
+              "calorie": "Low",
+              "menuitems":[
+                  {
+                    "id": 1,
+                    "food": "Spaghati"
+                  },
+                  {
+                    "id": 2,
+                    "food": "Yorkshire pudding"
+                  }
+              ]
+            }
+          ]
+        },
+        {
+          "weekday":"Tuesday",
+          "mealtype":[
+            {
+              "mealid": 1,
+              "name": "BreakFast",
+              "calorie": "High",
+              "menuitems":[
+                  {
+                    "id": 1,
+                    "food": "Sandwitch"
+                  },
+                  {
+                    "id": 2,
+                    "food": "Fried eggs"
+                  }
+              ]
+            },
+            {
+              "mealid": 2,
+              "name": "Lunch",
+              "calorie": "High",
+              "menuitems":[
+                  {  
+                    "id": 1,
+                    "food": "Soup"
+                  },
+                  {
+                        "id": 2,
+                      "food": "Pasta"
+                  }
+              ]
+            },
+            {
+              "mealid": 3,
+              "name": "Dinner",
+              "calorie": "Low",
+              "menuitems":[
+                  {
+                    "id": 1,
+                    "food": "Spaghati"
+                  },
+                  {
+                    "id": 2,
+                    "food": "Yorkshire pudding"
+                  }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+  
