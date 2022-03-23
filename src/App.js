@@ -1,12 +1,16 @@
-import React from 'react';
+import React from "react";
+import Navbar from "./components/NavBar";
+import { BrowserRouter as Router} from 'react-router-dom';
+import menu from './components/menu.json';
+import { handleChange } from "./handleChange";
 import './App.css';
-import NavBar from './components/NavBar'
 
 function App() {
+  handleChange(menu);
   return (
-    <div>
-      <NavBar />
-    </div>
+    <Router basename="/">
+      <Navbar />
+    </Router>   
   );
 }
 
