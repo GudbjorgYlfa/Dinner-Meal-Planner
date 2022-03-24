@@ -20,9 +20,21 @@
     width: 350px;
     position: absolute;
     left:180px;
+    
     border-radius: 10px;
      padding-left: 100px;
      padding-right: 20px;
     
 
 }
+.float-container {
+    position: absolute;
+    background-color: brown;
+    top: 120px;
+    padding: 5px;
+}
+
+.float-child {
+    float: left;
+    padding: 5px;
+}  
