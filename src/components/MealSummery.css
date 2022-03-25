@@ -16,7 +16,7 @@
 }
 .displaymenu{
 
-    background-color: rgb(146, 250, 240);
+    background-color: rgba(158, 192, 188, 0.829);
     width: 350px;
     position: absolute;
     left:180px;
@@ -29,9 +29,11 @@
 }
 .float-container {
     position: absolute;
-    background-color: brown;
+    background-color: rgba(158, 192, 188, 0.829);
     top: 120px;
+    left: 180px;
     padding: 5px;
+    border-radius: 10px;
 }
 
 .float-child {

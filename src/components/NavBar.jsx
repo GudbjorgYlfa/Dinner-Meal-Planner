@@ -1,5 +1,5 @@
 import React from 'react';
-import {NavLink, Routes, Route} from 'react-router-dom';
+import { NavLink, Routes, Route } from 'react-router-dom';
 import Home from './Home';
 import Monday from './Monday';
 import Tuesday from './Tuesday';
@@ -9,14 +9,14 @@ import Friday from './Friday';
 import Saturday from './Saturday';
 import Sunday from './Sunday';
 import MealSummary from './MealSummary';
-import'./NavBarStyle.css';
+import './NavBarStyle.css';
 
 function NavBar() {
   return (
     <><nav className="navBar">
       <ul>
         <li>
-        <NavLink className={({ isActive }) => (isActive ? 'active' : 'inactive')} to="/" >
+          <NavLink className={({ isActive }) => (isActive ? 'active' : 'inactive')} to="/MealSummary" >
             Homepage
           </NavLink>
         </li>
@@ -53,11 +53,6 @@ function NavBar() {
         <li>
           <NavLink className={({ isActive }) => (isActive ? 'active' : 'inactive')} to="/Sunday" >
             Sunday
-          </NavLink>
-        </li>
-        <li>
-          <NavLink className={({ isActive }) => (isActive ? 'active' : 'inactive')} to="/MealSummary" >
-            Meal Summary
           </NavLink>
         </li>
       </ul>
