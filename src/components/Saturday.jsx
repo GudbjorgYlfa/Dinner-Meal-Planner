@@ -83,7 +83,7 @@ function Saturday() {
                         <label>Select Menu Type: </label>
                         <select onChange={getMenutypevalue}>
                           <option value="Select">--Select--</option>
-                          <option value="BreakFast">BreakFast</option>
+                          <option value="Breakfast">Breakfast</option>
                           <option value="Lunch">Lunch</option>
                           <option value="Dinner">Dinner</option>
                         </select>
@@ -104,7 +104,7 @@ function Saturday() {
                     week.mealtype.map(mealtype => {
                       return(
                         <div key={mealtype.mealid}>
-                          <strong style={{color:"Blue", fontSize:"20px"}}>{mealtype.name} </strong>
+                          <strong style={{color:"White", fontSize:"20px", fontFamily:"Raleway, sans-serif", fontWeight:"bold"}}>{mealtype.name} </strong>
                           <table id="menuitems">
                             <thead>
                               <tr>

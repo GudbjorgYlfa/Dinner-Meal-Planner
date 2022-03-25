@@ -1,5 +1,5 @@
 #menuitems {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Raleway', sans-serif;
     border-collapse: collapse;
     table-layout: fixed;
     width: 100%;
@@ -33,7 +33,7 @@
     width: 10px;
   }
   .box{
-      width: 500px;
+    width: 500px;
     position: absolute;
     top: 180px;
     left: 180px;
@@ -43,5 +43,6 @@
     padding-bottom: 10px;
     padding-right: 40px;
     border-radius: 10px;
-   
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.5rem;
   }

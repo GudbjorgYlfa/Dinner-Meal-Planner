@@ -6,7 +6,7 @@
           "mealtype":[
             {
               "mealid": 1,
-              "name": "BreakFast",
+              "name": "Breakfast",
               "calorie": "High",
               "menuitems":[
                   {
@@ -41,7 +41,7 @@
               "menuitems":[
                   {
                     "id": 1,
-                    "food": "Spaghati"
+                    "food": "Spaghetti"
                   },
                   {
                     "id": 2,
@@ -59,12 +59,12 @@
           "mealtype":[
             {
               "mealid": 1,
-              "name": "BreakFast",
+              "name": "Breakfast",
               "calorie": "High",
               "menuitems":[
                   {
                     "id": 1,
-                    "food": "cereal "
+                    "food": "Cereal "
                   },
                   {
                     "id": 2,
@@ -83,7 +83,7 @@
                   },
                   {
                         "id": 2,
-                      "food": "Jacket Potato,Beans"
+                      "food": "Jacket Potato, Beans"
                   }
               ]
             },
@@ -94,7 +94,7 @@
               "menuitems":[
                   {
                     "id": 1,
-                    "food": "Burger,French Fries"
+                    "food": "Burger, French Fries"
                   },
                   {
                     "id": 2,
@@ -110,7 +110,7 @@
                 "mealtype":[
                   {
                     "mealid": 1,
-                    "name": "BreakFast",
+                    "name": "Breakfast",
                     "calorie": "High",
                     "menuitems":[
                         {
@@ -119,7 +119,7 @@
                         },
                         {
                           "id": 2,
-                          "food": "Waffel"
+                          "food": "Waffle"
                         }
                     ]
                   },
@@ -162,7 +162,7 @@
                     "mealtype":[
                       {
                         "mealid": 1,
-                        "name": "BreakFast",
+                        "name": "Breakfast",
                         "calorie": "High",
                         "menuitems":[
                             {
@@ -186,7 +186,7 @@
                             },
                             {
                                   "id": 2,
-                                "food": "macroni Cheese"
+                                "food": "Maccaroni Cheese"
                             }
                         ]
                       },
@@ -213,7 +213,7 @@
                         "mealtype":[
                           {
                             "mealid": 1,
-                            "name": "BreakFast",
+                            "name": "Breakfast",
                             "calorie": "High",
                             "menuitems":[
                                 {
@@ -265,7 +265,7 @@
                             "mealtype":[
                               {
                                 "mealid": 1,
-                                "name": "BreakFast",
+                                "name": "Breakfast",
                                 "calorie": "High",
                                 "menuitems":[
                                     {
@@ -316,7 +316,7 @@
                                 "mealtype":[
                                   {
                                     "mealid": 1,
-                                    "name": "BreakFast",
+                                    "name": "Breakfast",
                                     "calorie": "High",
                                     "menuitems":[
                                         {
@@ -336,7 +336,7 @@
                                     "menuitems":[
                                         {  
                                           "id": 1,
-                                          "food": "Macroni Cheese"
+                                          "food": "Maccaroni Cheese"
                                         },
                                         {
                                               "id": 2,

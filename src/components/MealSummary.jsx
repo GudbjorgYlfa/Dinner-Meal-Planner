@@ -9,7 +9,7 @@ function MealSummary() {
   return (
     <form id="formsummary">
       <div class="displaymenu">
-       <h1 style={{color:"Blue"}}> Weekly Menu Selected:</h1>
+       <h1 style={{color:"Black", fontSize:"20px", fontFamily:"Raleway, sans-serif", fontWeight:"bold"}}> Weekly Menu Selected:</h1>
         {
         menu.map(record => {
           return(
@@ -18,13 +18,13 @@ function MealSummary() {
               return (
                 <div className= "box1" key={week.weekday}>
                    <br/>
-                  <strong style={{color:"green", fontSize:"15px"}}>{week.weekday} - {week.weekdate}</strong>
+                  <strong style={{color:"White", fontSize:"15px", fontFamily:"Raleway, sans-serif"}}>{week.weekday} - {week.weekdate}</strong>
                  
                   {
                     week.mealtype.map(mealtype => {
                       return(
                         <div key={mealtype.mealid}>
-                         <strong>{mealtype.name} </strong> 
+                         <div className="menuStyling">{mealtype.name} </div> 
                           <table id="menuitems1">
 
                             <thead>
