@@ -67,5 +67,28 @@ export const handleChange = (menu) => {
         })
     );
   });
+
+  menu.map(record => {
+    return (
+      record.week.filter(week => week.weekday === "Saturday")
+        .map(week => {
+          console.log(week.weekday);
+          week.weekdate = dateFormat(friday, "dd/mm/yyyy");
+          return week;
+        })
+    );
+  });
+
+  menu.map(record => {
+    return (
+      record.week.filter(week => week.weekday === "Sunday")
+        .map(week => {
+          console.log(week.weekday);
+          week.weekdate = dateFormat(friday, "dd/mm/yyyy");
+          return week;
+        })
+    );
+  });
+  
   console.log(menu);
 };

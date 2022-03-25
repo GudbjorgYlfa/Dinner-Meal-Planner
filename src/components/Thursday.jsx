@@ -102,7 +102,6 @@ function Thursday() {
                   <br/><br/>
                 <div className= "box" key={week.weekday}>
                   <strong>{week.weekday} - {week.weekdate}</strong><br/>
-
                   {
                     week.mealtype.map(mealtype => {
                       return(
