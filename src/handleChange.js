@@ -9,6 +9,8 @@ export const handleChange = (menu) => {
   var wednesday = new Date(currentDate.setDate(currentDate.getDate() - currentDate.getDay() + 3)).toUTCString();
   var thursday = new Date(currentDate.setDate(currentDate.getDate() - currentDate.getDay() + 4)).toUTCString();
   var friday = new Date(currentDate.setDate(currentDate.getDate() - currentDate.getDay() + 5)).toUTCString();
+  var saturday = new Date(currentDate.setDate(currentDate.getDate() - currentDate.getDay() + 6)).toUTCString();
+  var sunday = new Date(currentDate.setDate(currentDate.getDate() - currentDate.getDay() + 7)).toUTCString();
   console.log(dateFormat(monday, "dd/mm/yyyy"), dateFormat(tuesday, "dd/mm/yyyy"), dateFormat(wednesday, "dd/mm/yyyy"), dateFormat(thursday, "dd/mm/yyyy"), dateFormat(friday, "dd/mm/yyyy"));
 
 
@@ -73,7 +75,7 @@ export const handleChange = (menu) => {
       record.week.filter(week => week.weekday === "Saturday")
         .map(week => {
           console.log(week.weekday);
-          week.weekdate = dateFormat(friday, "dd/mm/yyyy");
+          week.weekdate = dateFormat(saturday, "dd/mm/yyyy");
           return week;
         })
     );
@@ -84,11 +86,11 @@ export const handleChange = (menu) => {
       record.week.filter(week => week.weekday === "Sunday")
         .map(week => {
           console.log(week.weekday);
-          week.weekdate = dateFormat(friday, "dd/mm/yyyy");
+          week.weekdate = dateFormat(sunday, "dd/mm/yyyy");
           return week;
         })
     );
   });
-  
+
   console.log(menu);
 };
